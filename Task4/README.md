@@ -2,7 +2,7 @@
 
 # SECURE WORLD
 <!--blockquote-->
-__In today's world we can't live without one thing and that is called DATA.__
+__>In today's world we can't live without one thing and that is called DATA.__
 __Data has become an unavoidable factor in modern world.__
 __Looking back to the beginning of 2020 what all we learn new is innumerable.__
 __It is considered to be an evolutionary time for cyber and privacy.__
