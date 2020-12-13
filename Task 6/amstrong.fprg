@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Intel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-10 10:16:30 PM"/>
+        <attribute name="created" value="SW50ZWw7TEFQVE9QLVJMRE1SNFJTOzIwMjAtMTEtMTA7MDM6MzM6MTAgUE07Mjg4MA=="/>
+        <attribute name="edited" value="SW50ZWw7TEFQVE9QLVJMRE1SNFJTOzIwMjAtMTEtMTA7MTA6MTY6MzAgUE07NTsyOTkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Armstrong number&#13;&#10;153=[1*1*1]+[5*5*5]+[3*3*3]"/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="numbers" type="Integer" array="False" size=""/>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <declare name="original" type="Integer" array="False" size=""/>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <declare name="r" type="Integer" array="False" size=""/>
+            <output expression="&quot;How many numbers you are looking for?&quot;" newline="True"/>
+            <input variable="numbers"/>
+            <for variable="n" start="1" end="numbers" direction="inc" step="1">
+                <assign variable="sum" expression="0"/>
+                <assign variable="num" expression="n"/>
+                <assign variable="original" expression="num"/>
+                <while expression="num&gt;0">
+                    <assign variable="r" expression="num MOD 10"/>
+                    <assign variable="sum" expression="sum+(r*r*r)"/>
+                    <assign variable="num" expression="num/10"/>
+                </while>
+                <if expression="sum=original">
+                    <then>
+                        <output expression="ToString(sum)&amp;&quot;is a Armstrong number&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
